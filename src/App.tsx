@@ -29,14 +29,15 @@ function App() {
   };
 
   return (
-    <div className="w-screen relative flex flex-col overflow-hidden gap-4 h-screen border">
+    <div className="w-screen relative flex flex-col overflow-hidden gap-4 h-dvh">
       {isComfort ? (
         <div className="w-full h-full flex flex-col items-center gap-8 pt-30">
           <img src={hug} alt="hug" className="size-60 animate-customAni " />
           <div className="text-4xl animate-bounce font-bold">{"( >᎑<)♡︎ᐝ"}</div>
-          <div className="absolute top-0 left-0">
+          <div className="text-sm text-gray-400">有效期限：2075/12/31</div>
+          <div className="absolute scale-120 top-0 left-1/2 transform -translate-x-1/2">
             <Lottie
-              width={450}
+              width={800}
               height={800}
               speed={1.5}
               isClickToPauseDisabled
